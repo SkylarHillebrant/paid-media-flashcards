@@ -8,8 +8,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Flashcards">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111418" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7f9">
+<meta name="color-scheme" content="light">
 <title>Paid Media Flashcards</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -32,26 +32,6 @@
     --ex-bg: #edf3ff;
     --ex-line: #b9cdf5;
     --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 6px 20px rgba(16, 24, 40, .07);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #111418;
-      --surface: #1a1f26;
-      --surface-2: #232a33;
-      --text: #e9edf2;
-      --muted: #9aa4b1;
-      --line: #2e3640;
-      --accent: #6e9cf0;
-      --accent-ink: #0b1220;
-      --good: #4cc286;
-      --again: #ec8b74;
-      --note-bg: #2d2416;
-      --note-line: #8a6420;
-      --note-ink: #f1cd92;
-      --ex-bg: #1b2638;
-      --ex-line: #31476d;
-      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
-    }
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; }
@@ -245,7 +225,6 @@
   .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); grid-column: 2 / 4; }
   .btn.again { color: var(--again); }
   .btn.good { background: var(--good); border-color: var(--good); color: #fff; }
-  @media (prefers-color-scheme: dark) { .btn.good { color: #0b1a12; } }
   .hidden { display: none !important; }
 </style>
 </head>
